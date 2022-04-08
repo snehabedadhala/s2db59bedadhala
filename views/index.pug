@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to the #{title}
+  button(type='button',class='btn btn-success', onClick='moreClaps()') Press Me for the contents
+  div(id='target') Clap for me
+  script. 
+    let clap_count = 0;
+    function moreClaps(){
+      clap_count=clap_count+2;
+      document.getElementById("target").innerHTML=`Clap ${clap_count} times`; 
+    }
+  a(href="whiskey") whiskey
