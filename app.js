@@ -35,7 +35,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/whiskey', whiskeyRouter);
+app.use('/whiskeys', whiskeyRouter);
 app.use('/addmods', addmodsRouter);
 app.use('/selector', selctorRouter);
 app.use('/resource', resourceRouter);

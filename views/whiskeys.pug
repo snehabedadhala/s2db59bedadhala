@@ -3,7 +3,7 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
-  - var results = [{name:"Macallan", whiskey_type: "Single Malt", price:72}, {name:"Glenfidich", whiskey_type: "Blended", price:35},{name:"Glenlievet", whiskey_type: "Single Malt", price:67}]
+  - var results = thewhiskeys
   div(class="container-fluid") 
   div(class="row")
   -
