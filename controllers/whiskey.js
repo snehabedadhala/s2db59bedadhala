@@ -1,8 +1,15 @@
 var whiskey = require('../models/whiskey'); 
  
 // List of all Costumes 
-exports.whiskey_list = function(req, res) { 
-    res.send('NOT IMPLEMENTED: whiskey list'); 
+exports.whiskey_list = async function(req, res) { 
+    try{ 
+        thewhiskeys = await whiskey.find(); 
+        res.send(thewhiskeys); 
+    } 
+    catch(err){ 
+        res.status(500); 
+        res.send(`{"error": ${err}}`); 
+    }   
 }; 
  
 // for a specific Costume. 
