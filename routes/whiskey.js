@@ -5,3 +5,6 @@ var router = express.Router();
 /* GET whiskeys */ 
 router.get('/', whiskey_controlers.whiskey_view_all_Page ); 
 module.exports = router; 
+
+/* GET detail costume page */ 
+router.get('/detail', whiskey_controlers.whiskey_view_one_Page); 
