@@ -8,3 +8,6 @@ module.exports = router;
 
 /* GET detail costume page */ 
 router.get('/detail', whiskey_controlers.whiskey_view_one_Page); 
+
+/* GET create costume page */ 
+router.get('/create', whiskey_controlers.whiskey_create_Page); 
