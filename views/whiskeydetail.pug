@@ -2,21 +2,23 @@ extends layout
  
 block content 
   h1= title 
- 
-  - let whiskeyid = toShow._id 
-  - let whiskey_type = toShow.whiskey_type 
-  - let whiskeycost = toShow.price 
-  - let whiskeyname = toShow.name 
-  div 
-    div.row 
-      div(class='whiskeyAttr mr-3') Whiskey ID is: 
-      div #{whiskeyid} 
-    div.row 
-      div(class='whiskeyAttr mr-3') Whiskey Type is: 
-      div #{whiskey_type} 
-    div.row 
-      div(class='whiskeyAttr mr-3') Whiskey Price is: 
-      div #{whiskeycost} 
-    div.row 
-      div(class='whiskeyAttr mr-3') Whiskey Name is: 
-      div #{whiskeyname} 
+  if (toShow == null) 
+    h2 No instance to show details
+  else
+    - let whiskeyid = toShow._id 
+    - let whiskey_type = toShow.whiskey_type 
+    - let whiskeycost = toShow.price 
+    - let whiskeyname = toShow.name 
+    div 
+      div.row 
+        div(class='whiskeyAttr mr-3') Whiskey ID is: 
+        div #{whiskeyid} 
+      div.row 
+        div(class='whiskeyAttr mr-3') Whiskey Type is: 
+        div #{whiskey_type} 
+      div.row 
+        div(class='whiskeyAttr mr-3') Whiskey Price is: 
+        div #{whiskeycost} 
+      div.row 
+        div(class='whiskeyAttr mr-3') Whiskey Name is: 
+        div #{whiskeyname} 

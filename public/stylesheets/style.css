@@ -8,6 +8,11 @@ a {
 }
 
 .whiskeyAttr { 
-  background-color: aquamarine; 
+  background-color: lightblue; 
+  width: 120px; 
+} 
+
+.buttonAttr { 
+  background-color: greenyellow; 
   width: 120px; 
 } 
