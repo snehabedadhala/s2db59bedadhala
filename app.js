@@ -21,7 +21,7 @@ passport.use(new LocalStrategy(
   }));
 
 
-const connectionString =  process.env.MONGO_CON 
+const connectionString =  "mongodb+srv://dbuser:Iamgreat1!@cluster0.4kgjs.mongodb.net/learnMongo?retryWrites=true&w=majority" 
 mongoose = require('mongoose'); 
 mongoose.connect(connectionString,  {useNewUrlParser: true, useUnifiedTopology: true});
 //Get the default connection 
